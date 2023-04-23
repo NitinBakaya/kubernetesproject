@@ -1,11 +1,6 @@
 node {
     def app
 
-    stage('Initialize'){
-        def dockerHome = tool 'dockerhub'
-        env.PATH = "${dockerHome}/bin:${env.PATH}"
-    }
-
     stage('Clone repository') {
       
 
